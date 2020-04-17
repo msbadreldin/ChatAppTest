@@ -1,3 +1,4 @@
 node_modules/
 server.log
 readme.txt
+package-lock.json
