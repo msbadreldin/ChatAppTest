@@ -1,10 +1,10 @@
 const express = require('express')
 const hbs = require('hbs')
 const fs = require('fs')
-const weather = require('../app-promise')
+const weather = require('./app-promise')
 const app = express()
 
-hbs.registerPartials(__dirname + '/../views/partials')
+hbs.registerPartials(__dirname + '/views/partials')
 hbs.registerHelper('getCurrentDate', () => {
     return new Date().getFullYear()
 })
