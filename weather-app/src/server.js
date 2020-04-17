@@ -1,10 +1,10 @@
 const express = require('express')
 const hbs = require('hbs')
 const fs = require('fs')
-const weather = require('/app-promise')
+const weather = require('../app-promise')
 const app = express()
 
-hbs.registerPartials(__dirname + '/views/partials')
+hbs.registerPartials(__dirname + '/../views/partials')
 hbs.registerHelper('getCurrentDate', () => {
     return new Date().getFullYear()
 })
@@ -35,7 +35,7 @@ app.use(express.static('public'))
 // })
 
 app.get('/', (req, res) => {
-    res.render('./home.hbs', {
+    res.render('home.hbs', {
         pageTitle: 'Home Page',
         title: 'Weather',
         welcomeMessage: 'Welcome to my website'
@@ -43,14 +43,14 @@ app.get('/', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-    res.render('./about.hbs', {
+    res.render('about.hbs', {
         pageTitle: 'About Page',
         title: 'About us'
     })
 })
 
 app.get('/projects', (req, res) => {
-    res.render('./projects.hbs', {
+    res.render('projects.hbs', {
         pageTitle: 'projects Page',
         title: 'Projects',
     })
