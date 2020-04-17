@@ -1,7 +1,7 @@
 const express = require('express')
 const hbs = require('hbs')
 const fs = require('fs')
-const weather = require('./weather-app/app-promise')
+const weather = require('./app-promise')
 const app = express()
 
 hbs.registerPartials(__dirname + '/views/partials')
