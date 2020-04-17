@@ -1,11 +1,11 @@
 {
   "name": "web-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "git status\r git commit -m 'something'\r git push\r git push heroku\r heroku open",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "node server.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +13,15 @@
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "hbs": "^4.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msbadreldin/ChatAppTest.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/msbadreldin/ChatAppTest/issues"
+  },
+  "homepage": "https://github.com/msbadreldin/ChatAppTest#readme"
 }
