@@ -22,7 +22,7 @@ weatherForm.addEventListener('submit', (event) => {
     var location = encodeURIComponent(address.value)
     message1.textContent = 'Loading...';
     message2.textContent = '';
-    fetch(`http://localhost:3000/weather?address=${location}`).then((response) => {
+    fetch(`https://glacial-harbor-90372.herokuapp.com/weather?address=${location}`).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 message1.textContent = data.error;
